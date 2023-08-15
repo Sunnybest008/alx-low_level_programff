@@ -2,7 +2,7 @@
 /**
 *main - entry point
 *
-*Description: Prints the alphabet 10 times, in lowercase.
+*print_alphabet - Prints the alphabet 10 times, in lowercase.
 *
 *Return: Always 0
 */

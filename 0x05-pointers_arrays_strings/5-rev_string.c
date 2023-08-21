@@ -13,9 +13,7 @@ void rev_string(char *s)
 	/* Calculate the length of the string */
 	while (s[length] != '\0')
 		length++;
-
 	end = length - 1;
-
 	/* Reverse the string */
 	while (start < end)
 	{

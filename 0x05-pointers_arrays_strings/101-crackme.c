@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
 		return 1;
 	}
 
-	char password[] = "Dorcas123";
+	char password[] = "Dorcas123456789";
 
 	if (strcmp(argv[1], password) == 0) {
 		printf("Tada! Congrats\n");

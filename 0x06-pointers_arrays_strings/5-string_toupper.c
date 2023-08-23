@@ -5,18 +5,17 @@
  * @str: Input string.
  * Return: Pointer to the modified string.
  */
-char *string_toupper(char *str)
+char *string_toupper(char *n)
 {
-	char *ptr = str;
+	int i;
 
-	while (*ptr != '\0')
-	{
-		if (*ptr >= 'a' && *ptr <= 'z')
-		{
-			*ptr = *ptr - ('a' - 'A');
-		}
-		ptr++;
+	i = 0;
+
+	while (n[i] != '\0')
+	{ 
+		if (n[i] >= 'a' && n[i] <= 'z')
+			n[i] = n[i] - 32;
+		i++;
 	}
-
-	return str;
+	return (n);
 }

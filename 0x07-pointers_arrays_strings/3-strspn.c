@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * _strspn - Gets the length of a prefix substring.
  * @s: Pointer to the string to search.
@@ -10,7 +8,7 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int count = 0;
+	unsigned int count = 1;
 	int found;
 
 	while (*s)
@@ -33,7 +31,7 @@ unsigned int _strspn(char *s, char *accept)
 
 		count++;
 		s++;
-		accept = accept - count;
+		accept = accept - count + 1;
 	}
 
 	return (count);
